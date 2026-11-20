@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cream-color: #F7F1E8;
+    --beige-color: #D8C3A5;
+    --mocha-color: #9B6B43;
+    --exspreso-color: #3B2923;
+    --blackBg-color: #1E1E1E;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--blackBg-color);
+}
+
+
+/* Hero Section */
+.heroSection{
+    position: relative;
+    background-image: url("../assets/bgCoffee.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 190px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    color: var(--cream-color);
+}
+
+.heroSection h3{
+    font-size: 20px;
+}
+
+.heroSection h1{
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 65px;
+}
+
+.heroSection p{
+    width: 65%;
+    font-size: 13.5px;
+    color: var(--cream-color);
+    opacity: 70%;
+}
+
+.heroSection .btn {
+    display: flex;
+    gap: 20px;
+}
+
+.btnWhite{
+    padding: 7px 35px;
+    background: var(--cream-color);
+    border: 1px solid transparent;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--exspreso-color);
+    transition: all .3s ease;
+}
+.btnWhite:hover{
+    background: none;
+    text-decoration: none;
+    border: 1px solid var(--cream-color);
+    color: var(--cream-color);
+}
+
+.btnTrans{
+    padding: 7px 10px;
+    background: none;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid var(--cream-color);
+    color: var(--cream-color);
+    transition: all .3s ease;
+}
+.btnTrans:hover{
+    background: var(--cream-color);
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: var(--exspreso-color);
+}
+
+.heroSection h1, h3, p, .btn{
+    z-index: 2;
+}
+
+.heroSection .blur{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, #00000000, var(--blackBg-color));
+    z-index: 1;
+}
+
+
+/* ====== */
+.katalogSection{
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    gap: 30px;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    width: 100%;
+    padding: 10px 35px;
+
+    border: 2px solid var(--cream-color);
+    border-radius: 15px;
+}
+
+.searchBox i {
+    font-size: 20px;
+    color: var(--cream-color);
+}
+
+.searchBox input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-family: var(--main-font);
+    font-size: 15px;
+    color: var(--cream-color);
+}
+
+.searchBox input::placeholder {
+    color: #888;
+}
+
+.kategoriMenu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.kategoriMenu .kategoriCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--beige-color);
+    border-radius: 10px;
+    width: 140px;
+    height: 140px;
+    transform: scale(1);
+    transition: all .3s ease;
+}
+
+.kategoriMenu .kategoriCard:hover{
+    transform: scale(1.1);
+    background: var(--cream-color);
+}
+
+.kategoriMenu .kategoriCard img{
+    width: 70%;
+    height: 70%;
+}
+.kategoriMenu .kategoriCard h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+
+
