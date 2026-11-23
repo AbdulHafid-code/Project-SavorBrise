@@ -14,11 +14,14 @@
     --blackBg-color: #1E1E1E;
 }
 
+a{
+    text-decoration: none;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     background: var(--blackBg-color);
 }
-
 
 /* Hero Section */
 .heroSection{
@@ -108,7 +111,7 @@ body {
 }
 
 
-/* ====== */
+/* === Kategori section === */
 .katalogSection{
     display: flex;
     flex-direction: column;
@@ -168,7 +171,7 @@ body {
 }
 
 .kategoriMenu .kategoriCard:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     background: var(--cream-color);
 }
 
@@ -180,6 +183,33 @@ body {
     font-size: 15px;
     font-weight: 500;
 }
+
+
+/* === menu unggulan === */
+.menuSection{
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    gap: 30px;
+}
+
+.menuSection .menuPageTittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuSection .menuPageTittle h2{
+    color: var(--cream-color);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.menuUnggulan{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 

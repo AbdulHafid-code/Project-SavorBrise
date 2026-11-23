@@ -4,24 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/cardMenu.css">
+
+    <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Menu - SavorBrise.</title>
+    <title>Beranda - SavorBrise.</title>
 </head>
 
 <body>
 
     <!-- navbar -->
-    <header id="navbarSection">
-        <div><a href="">SavorBrise.</a></div>
+    <header id="navbarSection" class="navbarSection">
+        <div class="logo"><a href="">SavorBrise.</a></div>
 
-        <ul>
-            <li><a href="Index.html">Beranda</a></li>
-            <li><a href="Tentang.html">Tentang</a></li>
-            <li><a href="Menu.html">Menu</a></li>
-            <li><a href="Kontak.html">Kontak</a></li>
+        <ul class="menu">
+            <li><a href="../Index.html">Beranda</a></li>
+            <li><a href="../pages/Tentang.html">Tentang</a></li>
+            <li><a href="../pages/Menu.html">Menu</a></li>
+            <li><a href="../pages/Kontak.html">Kontak</a></li>
         </ul>
 
-        <div>
+        <div class="menuIcon">
             <a href="Keranjang.html"><i class="bi bi-basket"></i></a>
             <a href="riwayat"><i class="bi bi-clipboard"></i></a>
             <a href="profil"><i class="bi bi-person-circle"></i></a>
@@ -29,274 +36,75 @@
     </header>
 
     <main>
-
         <!-- header menu -->
-        <section id="headerSection">
-            <!-- titlenya -->
-            <h1>Tentang Kami</h1>
+        <section id="menuSection" class="menuSection">
+            <h1>PILIH YANG<span style="color: var(--mocha-color);"> TERSEDIA</span><br> BUKAN YANG <span
+                    style="color: var(--beige-color);">TIDAK ADA</span></h1>
+
             <!-- search -->
-            <div class="search-box">
-                <input type="search" placeholder="Cari menu...">
-                <button type="submit"><i class="bi bi-search"></i></button>
-            </div>
+            <form class="searchBox">
+                <i class="bi bi-search"></i>
+                <input type="search" placeholder="Telusuri Menu...">
+            </form>
 
             <!-- katalog -->
-            <div id="katalogMenu">
-                <div class="katalog">
-                    <div class="gambarKatalog"><img src="coffee.png" alt=""></div>
+            <div id="kategoriMenu" class="kategoriMenu">
+                <div class="kategoriCard">
+                    <img src="../assets/kategori/coffee.svg" alt="Coffee">
                     <h3>Coffee</h3>
                 </div>
 
-                <div class="katalog">
-                    <div class="gambarKatalog"><img src="non-coffee.png" alt=""></div>
+                <div class="kategoriCard">
+                    <img src="../assets/kategori/non-coffee.svg" alt="">
                     <h3>Non-Coffee</h3>
                 </div>
 
-                <div class="katalog">
-                    <div class="gambarKatalog"><img src="bakery.png" alt=""></div>
+                <div class="kategoriCard">
+                    <img src="../assets/kategori/bakery.svg" alt="">
                     <h3>Bakery</h3>
                 </div>
 
-                <div class="katalog">
-                    <div class="gambarKatalog"><img src="dessert.png" alt=""></div>
+                <div class="kategoriCard">
+                    <img src="../assets/kategori/dessert.svg" alt="">
                     <h3>Dessert</h3>
                 </div>
 
-                <div class="katalog">
-                    <div class="gambarKatalog"><img src="sandwich.png" alt=""></div>
+                <div class="kategoriCard">
+                    <img src="../assets/kategori/sandwich.svg" alt="">
                     <h3>Sandwich</h3>
                 </div>
 
-                <div class="katalog">
-                    <div class="gambarKatalog"><img src="Snacks.png" alt=""></div>
+                <div class="kategoriCard">
+                    <img src="../assets/kategori/snack.svg" alt="">
                     <h3>Snacks</h3>
                 </div>
 
-                <div class="katalog">
-                    <div class="gambarKatalog"><img src="main-course.png" alt=""></div>
+                <div class="kategoriCard">
+                    <img src="../assets/kategori/main-course.svg" alt="">
                     <h3>Main Course</h3>
                 </div>
             </div>
+
+            <div class="blur"></div>
         </section>
 
         <!-- daftar menu section -->
-        <section id="daftarMenu">
+        <section id="daftarMenu" class="daftarMenu">
 
             <!-- 1 -->
-            <div class="cardMenu">
-                <a href="DetailMenu.html">
-                    <img src="chocolate-brownies.png" alt="Chocolate Brownies">
-                    <div class="isi">
-                        <h3>Chocolate Brownies</h3>
-                        <p>Brownies cokelat lembut dan fudgy</p>
-                        <div class="harga">
-                            <h4>Rp. 22.000</h4>
+            <a href="">
+                <div class="menuCard">
+                    <img src="../assets/menu/waffle.png" alt="">
+                    <div class="infoMenu">
+                        <h3>Coffee Latte</h3>
+                        <p>Kopi Latte Lembut Dimulut Dengan Aroma Kopi Robusta.</p>
+                        <div>
+                            <h4>Rp 15.000</h4>
                             <i class="bi bi-basket"></i>
                         </div>
                     </div>
-                </a>
-            </div>
-
-            <!-- 2 -->
-            <div class="cardMenu">
-                <a href="DetailMenu.html">
-                    <img src="waffle-lava.png" alt="Waffle Lava">
-                    <div class="isi">
-                        <h3>Waffle Lava</h3>
-                        <p>Hot Waffle dengan perpaduan cokelat cair yang meleleh dan nikmat</p>
-                        <div class="harga">
-                            <h4>Rp. 20.000</h4>
-                            <i class="bi bi-basket"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- 3 -->
-            <div class="cardMenu">
-                <a href="DetailMenu.html">
-                    <img src="new-york-cheesecake.png" alt="New York Cheesecake">
-                    <div class="isi">
-                        <h3>New York Cheesecake</h3>
-                        <p>Cheesecake lembut dengan rasa creamy</p>
-                        <div class="harga">
-                            <h4>Rp. 26.000</h4>
-                            <i class="bi bi-basket"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- 4 -->
-            <div class="cardMenu">
-                <a href="DetailMenu.html">
-                    <img src="butter-croissant.png" alt="Butter Croissant">
-                    <div class="isi">
-                        <h3>Butter Croissant</h3>
-                        <p>Pastry renyah dengan aroma mentega</p>
-                        <div class="harga">
-                            <h4>Rp. 18.000</h4>
-                            <i class="bi bi-basket"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- 5 -->
-            <div class="cardMenu">
-                <img src="creamy-alfredo-pasta.png" alt="Creamy Alfredo Pasta">
-                <div class="isi">
-                    <h3>Creamy Alfredo Pasta</h3>
-                    <p>Pasta creamy dengan keju</p>
-                    <div class="harga">
-                        <h4>Rp. 35.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
                 </div>
-            </div>
-
-            <!-- 6 -->
-            <div class="cardMenu">
-                <img src="golden-french-fries.png" alt="Golden French Fries">
-                <div class="isi">
-                    <h3>Golden French Fries</h3>
-                    <p>Kentang renyah dengan rasa gurih</p>
-                    <div class="harga">
-                        <h4>Rp. 18.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 7 -->
-            <div class="cardMenu">
-                <img src="brise-beef-burger.png" alt="Brise Beef Burger">
-                <div class="isi">
-                    <h3>Brise Beef Burger</h3>
-                    <p>Roti burger dengan beef patty juicy</p>
-                    <div class="harga">
-                        <h4>Rp. 32.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 8 -->
-            <div class="cardMenu">
-                <img src="kebab-turkey.png" alt="Kebab Turkey">
-                <div class="isi">
-                    <h3>Kebab Turkey</h3>
-                    <p>Kebab isi daging dan sayuran segar</p>
-                    <div class="harga">
-                        <h4>Rp. 25.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 9 -->
-            <div class="cardMenu">
-                <img src="iced-chocolate.png" alt="Iced Chocolate">
-                <div class="isi">
-                    <h3>Iced Chocolate</h3>
-                    <p>Ice cream cokelat dengan perpaduan cokelat</p>
-                    <div class="harga">
-                        <h4>Rp. 17.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 10 -->
-            <div class="cardMenu">
-                <img src="coffee-latte.png" alt="Coffee Latte">
-                <div class="isi">
-                    <h3>Coffee Latte</h3>
-                    <p>Espresso lembut berpadu dengan susu</p>
-                    <div class="harga">
-                        <h4>Rp. 15.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 11 -->
-            <div class="cardMenu">
-                <img src="strawberry-milk.png" alt="Strawberry Milk">
-                <div class="isi">
-                    <h3>Strawberry Milk</h3>
-                    <p>Susu creamy dengan strawberry manis</p>
-                    <div class="harga">
-                        <h4>Rp. 19.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 12 -->
-            <div class="cardMenu">
-                <img src="iced-cafe-latte.png" alt="Iced Cafe Latte">
-                <div class="isi">
-                    <h3>Iced Cafe Latte</h3>
-                    <p>Espresso nikmat dengan susu creamy</p>
-                    <div class="harga">
-                        <h4>Rp. 17.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 13 -->
-            <div class="cardMenu">
-                <img src="vanilla-latte.png" alt="Vanilla Latte">
-                <div class="isi">
-                    <h3>Vanilla Latte</h3>
-                    <p>Kopi lembut dengan aroma vanilla</p>
-                    <div class="harga">
-                        <h4>Rp. 23.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 14-->
-            <div class="cardMenu">
-                <img src="iced-americano.png" alt="Iced Americano">
-                <div class="isi">
-                    <h3>Iced Americano</h3>
-                    <p>Espresso segar dengan sensasi pahit</p>
-                    <div class="harga">
-                        <h4>Rp. 12.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 15-->
-            <div class="cardMenu">
-                <img src="iced-chocolate-2.png" alt="Iced Chocolate">
-                <div class="isi">
-                    <h3>Iced Chocolate</h3>
-                    <p>Cokelat pekat dengan rasa manis</p>
-                    <div class="harga">
-                        <h4>Rp. 18.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 16 -->
-            <div class="cardMenu">
-                <img src="caramel-macchiato.png" alt="Caramel Macchiato">
-                <div class="isi">
-                    <h3>Caramel Macchiato</h3>
-                    <p>Kopi susu dengan topping saus karamel</p>
-                    <div class="harga">
-                        <h4>Rp. 21.000</h4>
-                        <i class="bi bi-basket"></i>
-                    </div>
-                </div>
-            </div>
+            </a>
 
         </section>
 

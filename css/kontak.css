@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cream-color: #F7F1E8;
+    --beige-color: #D8C3A5;
+    --mocha-color: #9B6B43;
+    --exspreso-color: #3B2923;
+    --blackBg-color: #1E1E1E;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--blackBg-color);
+}
+
+/* Tentang Section */
+.kontakSection{
+    position: relative;
+    background-image: url("../assets/bgCoffee.jpg");
+    background-size: cover;
+    background-position: start;
+    background-repeat: no-repeat;
+    padding: 190px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    color: var(--cream-color);
+}
+
+.kontakSection h1{
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 65px;
+}
+
+.heroSection h3{
+    font-size: 20px;
+}
+
+.heroSection h1, h3{
+    z-index: 2;
+}
+
+.kontakSection .blur{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, #00000000, var(--blackBg-color));
+    z-index: 1;
+}

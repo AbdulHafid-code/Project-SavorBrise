@@ -4,24 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/kontak.css">
+
+    <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Kontak - SavorBrise.</title>
+    <title>Beranda - SavorBrise.</title>
 </head>
 
 <body>
 
     <!-- navbar -->
-    <header id="navbarSection">
-        <div><a href="">SavorBrise.</a></div>
+    <header id="navbarSection" class="navbarSection">
+        <div class="logo"><a href="">SavorBrise.</a></div>
 
-        <ul>
-            <li><a href="Index.html">Beranda</a></li>
-            <li><a href="Tentang.html">Tentang</a></li>
-            <li><a href="Menu.html">Menu</a></li>
-            <li><a href="Kontak.html">Kontak</a></li>
+        <ul class="menu">
+            <li><a href="../Index.html">Beranda</a></li>
+            <li><a href="../pages/Tentang.html">Tentang</a></li>
+            <li><a href="../pages/Menu.html">Menu</a></li>
+            <li><a href="../pages/Kontak.html">Kontak</a></li>
         </ul>
 
-        <div>
+        <div class="menuIcon">
             <a href="Keranjang.html"><i class="bi bi-basket"></i></a>
             <a href="riwayat"><i class="bi bi-clipboard"></i></a>
             <a href="profil"><i class="bi bi-person-circle"></i></a>
@@ -29,10 +35,12 @@
     </header>
 
     <main>
-        <!-- header tentang -->
-        <section id="headerSection">
+        <!-- header kontak -->
+        <section id="kontakSection" class="kontakSection">
             <h1>Kontak Kami</h1>
-            <h3>SavorBrise. - Nikmati Setiap Rasa, Ciptakan Cerita.</h3>
+            <h3>SavorBrise. - Nikmati Setiap <span style="color: var(--mocha-color);">Rasa</span>, Ciptakan <span style="color: var(--beige-color);">Cerita</span>.</h3>
+
+            <div class="blur"></div>
         </section>
 
         <!-- informasi Kontak Section -->

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cream-color: #F7F1E8;
+    --beige-color: #D8C3A5;
+    --mocha-color: #9B6B43;
+    --exspreso-color: #3B2923;
+    --blackBg-color: #1E1E1E;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--blackBg-color);
+}
+
+/* Menu Section */
+.menuSection{
+    position: relative;
+    background-image: url("../assets/bgCoffee.jpg");
+    background-size: cover;
+    background-position: start;
+    background-repeat: no-repeat;
+    padding: 190px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    color: var(--cream-color);
+}
+
+.menuSection h1{
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 75px;
+    z-index: 2;
+}
+
+/* === Kategori section === */
+.searchBox {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    width: 100%;
+    padding: 10px 35px;
+
+    border: 2px solid var(--cream-color);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.searchBox i {
+    font-size: 20px;
+    color: var(--cream-color);
+}
+
+.searchBox input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-family: var(--main-font);
+    font-size: 15px;
+    color: var(--cream-color);
+}
+
+.searchBox input::placeholder {
+    color: #888;
+}
+
+.kategoriMenu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 2;
+}
+
+.kategoriMenu .kategoriCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--beige-color);
+    border-radius: 10px;
+    width: 140px;
+    height: 140px;
+    transform: scale(1);
+    transition: all .3s ease;
+}
+
+.kategoriMenu .kategoriCard:hover{
+    transform: scale(1.05);
+    background: var(--cream-color);
+}
+
+.kategoriMenu .kategoriCard img{
+    width: 70%;
+    height: 70%;
+}
+.kategoriMenu .kategoriCard h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menuSection .blur{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, #00000000, var(--blackBg-color));
+    z-index: 1;
+}
+
+/* daftar menu */
+.daftarMenu{
+    display: grid;
+    padding: 80px 80px;
+}

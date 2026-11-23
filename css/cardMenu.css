@@ -1,0 +1,56 @@
+.menuCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #3b29239e;
+    border: 2px solid var(--exspreso-color);
+    border-radius: 5px;
+    height: 420px;
+    width: 300px;
+    padding: 20px;
+    transform: translateY(0);
+    transition: transform .3s ease;
+}
+.menuCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 3px 3px 7px #0c0c0c88;
+}
+
+.menuCard .infoMenu{
+    display: flex;
+    flex-direction: column;
+    gap:auto;
+    color: var(--cream-color);
+}
+
+.menuCard .infoMenu h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.menuCard .infoMenu p{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 70%;
+    text-align: justify;
+}
+
+.menuCard .infoMenu div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuCard .infoMenu div h4{
+    font-weight: 600;
+}
+.menuCard .infoMenu div i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--cream-color);
+    background: var(--exspreso-color);
+    border-radius: 50%;
+    /* font-weight: 800; */
+}
