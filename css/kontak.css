@@ -23,17 +23,18 @@ body {
     background: var(--blackBg-color);
 }
 
-/* Tentang Section */
+/* 1. Kontak Section */
 .kontakSection{
     position: relative;
     background-image: url("../assets/bgCoffee.jpg");
     background-size: cover;
-    background-position: start;
+    background-position: center;
     background-repeat: no-repeat;
     padding: 190px 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 15px;
     color: var(--cream-color);
 }
@@ -42,13 +43,18 @@ body {
     font-size: 80px;
     font-weight: 800;
     line-height: 65px;
+    z-index: 2;
 }
 
 .heroSection h3{
     font-size: 20px;
+    z-index: 2;
 }
 
-.heroSection h1, h3{
+.heroSection h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 25px;
     z-index: 2;
 }
 
@@ -60,4 +66,239 @@ body {
     height: 50%;
     background: linear-gradient(to bottom, #00000000, var(--blackBg-color));
     z-index: 1;
+}
+/* 2. Informasi Section */
+#informasiSection{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    color: var(--cream-color);
+}
+
+/* Kotak Sosmed (Kiri - 2x2) */
+.cardSosmed {
+    flex: 1;
+    min-width: 320px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.cardSosmed .card {
+    background-color: var(--beige-color);
+    color: var(--exspreso-color);
+    padding: 40px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardSosmed .card:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cardSosmed .card i {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: var(--exspreso-color);
+}
+
+.cardSosmed .card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.cardSosmed .card h4 {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--exspreso-color);
+    opacity: 0.85;
+}
+
+/* Jam Operasional (Kanan) */
+.jamOperasional {
+    flex: 1;
+    min-width: 320px;
+}
+
+.jamOperasional h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 14px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(216, 195, 165, 0.4);
+}
+
+.jamOperasional .jam {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 12px;
+    border-bottom: 2px solid rgba(155, 107, 67);
+    transition: background-color 0.2s ease;
+}
+
+.jamOperasional .jam:hover {
+    background-color: rgba(155, 107, 67, 0.2);
+    border-radius: 4px;
+}
+
+.jamOperasional .jam h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--cream-color);
+}
+
+.jamOperasional .jam h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(247, 241, 232, 0.85);
+}
+
+/* 3. Maps Section */
+#mapsSection {
+    max-width: 1100px;
+    margin: 0 auto 80px auto;
+    padding: 0 40px;
+}
+
+#mapsSection .maps iframe {
+    width: 100%;
+    height: 380px;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* 4. Footer Section */
+#footerSection {
+    background-color: #2A211E;
+    color: var(--cream-color);
+    padding: 60px 80px 30px 80px;
+}
+
+.footerTop {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr 1.5fr;
+    gap: 35px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(247, 241, 232, 0.15);
+}
+
+.footerTop h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--cream-color);
+}
+
+.footerTop p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: rgba(247, 241, 232, 0.75);
+}
+
+.footerTop h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--cream-color);
+}
+
+.footerTop a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: rgba(247, 241, 232, 0.75);
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+.footerTop a:hover {
+    color: var(--beige-color);
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(247, 241, 232, 0.25);
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--cream-color);
+    font-size: 12px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.search-box input::placeholder {
+    color: rgba(247, 241, 232, 0.5);
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    color: var(--cream-color);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#footerBottom {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 12px;
+    color: rgba(247, 241, 232, 0.6);
+}
+
+/* 5. Responsive Design */
+@media (max-width: 900px) {
+    .footerTop {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .kontakSection {
+        padding: 130px 20px;
+    }
+
+    .kontakSection h1 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    #informasiSection,
+    #mapsSection {
+        padding: 0 20px;
+    }
+
+    #footerSection {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .footerTop {
+        grid-template-columns: 10fr;
+    }
 }
