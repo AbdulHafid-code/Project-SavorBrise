@@ -45,9 +45,17 @@ body {
     text-align: center;
 }
 
+#sejarahSection h2{
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 40px;
+    text-align: center;
+}
+
+
 #sejarahSection hr{
-    width: 10cm;                                       
-    background-color: var(--mocha-color);      
+    width: 15cm;                                   
+    background-color: var(--beige-color);      
     z-index: 2;      
     margin: 0 auto;         
 }

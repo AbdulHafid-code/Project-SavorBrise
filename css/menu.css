@@ -127,5 +127,131 @@ body {
 /* daftar menu */
 .daftarMenu{
     display: grid;
-    padding: 80px 80px;
+    grid-template-columns: repeat(4, 150px); 
+    justify-content: center;                 
+    gap: 10px 160px;
+    margin-left: -135px;
+    margin-right: 20px;
+}
+    
+
+
+#footerSection {
+    background-color: #2A211E;
+    color: var(--cream-color);
+    padding: 60px 80px 30px 80px;
+}
+
+.footerTop {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr 1.5fr;
+    gap: 35px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(247, 241, 232, 0.15);
+}
+
+.footerTop h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--cream-color);
+}
+
+.footerTop p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: rgba(247, 241, 232, 0.75);
+}
+
+.footerTop h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--cream-color);
+}
+
+.footerTop a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: rgba(247, 241, 232, 0.75);
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+.footerTop a:hover {
+    color: var(--beige-color);
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(247, 241, 232, 0.25);
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--cream-color);
+    font-size: 12px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.search-box input::placeholder {
+    color: rgba(247, 241, 232, 0.5);
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    color: var(--cream-color);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#footerBottom {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 12px;
+    color: rgba(247, 241, 232, 0.6);
+}
+
+/* 5. Responsive Design */
+@media (max-width: 900px) {
+    .footerTop {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .kontakSection {
+        padding: 130px 20px;
+    }
+
+    .kontakSection h1 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    #informasiSection,
+    #mapsSection {
+        padding: 0 20px;
+    }
+
+    #footerSection {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .footerTop {
+        grid-template-columns: 10fr;
+    }
 }
