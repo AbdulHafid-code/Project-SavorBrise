@@ -23,6 +23,10 @@ body {
     background: var(--blackBg-color);
 }
 
+.tentangSection h1  {
+    text-align:center;
+}
+
 /* Hero Section */
 .heroSection{
     position: relative;
